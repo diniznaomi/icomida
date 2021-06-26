@@ -14,6 +14,7 @@ $sql = "insert into clientes (id, cpf, nome, endereco) values ($id, '$cpf', '$no
 $result = mysqli_query($connection, $sql);
 
 if ($result) {
+    print_r(PHP_EOL);
     print_r('## Novos dados cadastrados com sucesso ##' . PHP_EOL);
     print_r('' . PHP_EOL);
 } else {

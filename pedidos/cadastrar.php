@@ -19,6 +19,7 @@ $sql = "insert into pedidos (id, motoboy_id, cliente_id, data_criacao, descricao
 $result = mysqli_query($connection, $sql);
 
 if ($result) {
+    print_r(PHP_EOL);
     print_r('## Novos dados cadastrados com sucesso ##' . PHP_EOL);
     print_r('' . PHP_EOL);
 } else {

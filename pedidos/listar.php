@@ -7,7 +7,11 @@ if ($result) {
     print_r('LISTAR PEDIDOS    ' . PHP_EOL);
     print_r(PHP_EOL);
     print_r(
-        'Total de registros encontrados: ' . mysqli_num_rows($result) . PHP_EOL
+        '*Total de registros encontrados: ' .
+            '(' .
+            mysqli_num_rows($result) .
+            ')' .
+            PHP_EOL
     );
     $array = mysqli_fetch_all($result);
 

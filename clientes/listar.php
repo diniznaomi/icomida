@@ -4,10 +4,15 @@ $sql = 'select * from clientes;';
 $result = mysqli_query($connection, $sql);
 
 if ($result) {
-    print_r('LISTAR CLIENTES    ' . PHP_EOL);
+    print_r(PHP_EOL);
+    print_r('## LISTAR CLIENTES ##' . PHP_EOL);
     print_r(PHP_EOL);
     print_r(
-        'Total de registros encontrados: ' . mysqli_num_rows($result) . PHP_EOL
+        '* Total de registros encontrados: ' .
+            '(' .
+            mysqli_num_rows($result) .
+            ')' .
+            PHP_EOL
     );
     $array = mysqli_fetch_all($result);
 
