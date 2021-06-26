@@ -41,5 +41,5 @@ while ($exit == false) {
 }
 print_r(PHP_EOL);
 print_r('-----------------------------------' . PHP_EOL);
-print_r('       OBRIGADA! ATE BREVE         ' . PHP_EOL);
+print_r('       OBRIGAD0(A)! ATE BREVE...   ' . PHP_EOL);
 print_r('-----------------------------------' . PHP_EOL);
